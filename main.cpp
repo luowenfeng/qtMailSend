@@ -6,11 +6,11 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    MailSender test("send.one.com", "test@blub-game.com", QStringList("markus.lanner@yahoo.de"), "Subject", "<html><header></header><body><H1>L'été Ångström</H1></body></html>");
+    MailSender test("send.one.com", "test@blub-game.com", QStringList("markus@yahoo.de"), "Subject", "<html><header></header><body><H1>L'été Ångström</H1></body></html>");
 /*    test.setSubject("Test2"),
     test.setBody("<html><header></header><body><H1>L'été Ångström</H1></body></html>");
 */    test.setContentType(MailSender::html);
-    test.setLogin("test@blub-game.com", "orlando");
+    test.setLogin("test@blub-game.com", "***");
     test.setSsl(true);
 /*    test.setPort(587);
     test.setBcc(QStringList("ilya.xxxxxx@gmail.com"));
